@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { BrowserRouter } from 'react-router-dom';
 import configureStore from './config/configureStore';
 import { Provider } from 'react-redux';
-import Routes from './routes';
+import Routes from './Routes';
 import ScrollToTop from './utils/ScrollToTop';
 import './assets/base.scss';
 import CssBaseline from '@material-ui/core/CssBaseline';
@@ -271,19 +271,3 @@ class App extends Component {
 }
 
 export default App;
-
-
-/*import React, {Component} from 'react';
-import Routes from './routes'
-
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <Routes/>
-      </div>
-    );
-  }
-}
-
-export default App;*/
