@@ -134,31 +134,12 @@ const LivePreviewExample = () => {
                             </div>
                             <div className="text-white mt-3">
                               <h1 className="display-4 my-3 font-weight-bold">
-                                Why should you create an account?
+                                Por que você deve criar uma conta?
                               </h1>
                               <p className="font-size-md mb-0 text-white-50">
-                                A free hour, when our power of choice is
-                                untrammelled and when nothing prevents.
+                                Uma hora livre, quando nosso poder de escolha é ilimitado e nada impede.
                               </p>
                               <div className="divider border-2 my-5 border-light opacity-2 rounded w-25" />
-                              <div>
-                                <Button
-                                  size="large"
-                                  className="text-white"
-                                  variant="contained"
-                                  color="primary"
-                                  component={RouterLink}
-                                  to="/DashboardDefault">
-                                  <span className="btn-wrapper--icon">
-                                    <FontAwesomeIcon
-                                      icon={['fas', 'arrow-left']}
-                                    />
-                                  </span>
-                                  <span className="btn-wrapper--label">
-                                    Back to dashboard
-                                  </span>
-                                </Button>
-                              </div>
                             </div>
                           </div>
                         </div>
@@ -227,16 +208,16 @@ const LivePreviewExample = () => {
                             indicatorColor="primary"
                             textColor="primary"
                             onChange={handleChange}>
-                            <StyledTab label="Create an account" />
-                            <StyledTab label="Sign in" />
+                            <StyledTab label="Crie a sua Conta" />
+                            <StyledTab label="Logar" />
                           </StyledTabs>
                         </div>
                         <TabPanel value={value} index={0}>
                           <h3 className="display-4 mb-2 font-weight-bold">
-                            Create account
+                            Crie sua Conta
                           </h3>
                           <p className="font-size-lg mb-5 text-black-50">
-                            Fill in the fields below and you'll be good to go.
+                            Preencha os campos abaixo.
                           </p>
                           <div className="mb-3">
                             <TextField
@@ -275,9 +256,8 @@ const LivePreviewExample = () => {
                             />
                           </div>
                           <div className="form-group pt-2 mb-4">
-                            By clicking the <strong>Create account</strong>{' '}
-                            button below you agree to our terms of service and
-                            privacy statement.
+                            Ao clicar no botão <strong>Criar conta</strong>{' '}
+                            abaixo, você concorda com nossos termos de serviço e declaração de privacidade.
                           </div>
 
                           <Button
@@ -285,52 +265,20 @@ const LivePreviewExample = () => {
                             size="large"
                             variant="contained"
                             className="mb-5">
-                            Create Account
+                            Crie sua Conta!
                           </Button>
                         </TabPanel>
                         <TabPanel value={value} index={1}>
                           <h3 className="display-4 mb-2 font-weight-bold">
-                            Existing account
+                            Conta Existente
                           </h3>
                           <p className="font-size-lg mb-5 text-black-50">
-                            You already have an account? Fill in the fields
-                            below to login into your existing dashboard.
+                            Você já tem uma conta? Preencha os campos abaixo para fazer o login em seu painel existente.
                           </p>
                           <Card className="mx-0 bg-secondary mt-0 w-100 p-0 mb-4 border-0">
-                            <div className="card-header d-block p-3 mx-2 mb-0 mt-2 rounded border-0">
-                              <div className="text-muted text-center mb-3">
-                                <span>Sign in with</span>
-                              </div>
-                              <div className="text-center">
-                                <Button
-                                  variant="outlined"
-                                  className="mr-2 text-facebook">
-                                  <span className="btn-wrapper--icon">
-                                    <FontAwesomeIcon
-                                      icon={['fab', 'facebook']}
-                                    />
-                                  </span>
-                                  <span className="btn-wrapper--label">
-                                    Facebook
-                                  </span>
-                                </Button>
-                                <Button
-                                  variant="outlined"
-                                  className="ml-2 text-twitter">
-                                  <span className="btn-wrapper--icon">
-                                    <FontAwesomeIcon
-                                      icon={['fab', 'twitter']}
-                                    />
-                                  </span>
-                                  <span className="btn-wrapper--label">
-                                    Twitter
-                                  </span>
-                                </Button>
-                              </div>
-                            </div>
                             <CardContent className="p-3">
                               <div className="text-center text-black-50 mb-3">
-                                <span>Or sign in with credentials</span>
+                                <span>Faça Login com as suas Credenciais</span>
                               </div>
                               <form className="px-5">
                                 <div className="mb-3">
@@ -386,6 +334,14 @@ const LivePreviewExample = () => {
                                     size="large"
                                     className="my-2">
                                     Sign in
+                                  </Button>
+                                </div>
+                                <div>
+                                  <Button
+                                    component={RouterLink}
+                                    to="/PagesRecoverPassword"
+                                    className="my-2">
+                                    Esqueci minha senha
                                   </Button>
                                 </div>
                               </form>

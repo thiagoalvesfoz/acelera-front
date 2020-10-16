@@ -1,5 +1,7 @@
 import React, { Fragment } from 'react';
 
+import { NavLink as RouterLink } from 'react-router-dom';
+
 import {
   Grid,
   Container,
@@ -13,6 +15,8 @@ import {
   Button,
   FormControl
 } from '@material-ui/core';
+
+import hero3 from '../../../assets/images/hero-bg/hero-3.jpg';
 
 import MailOutlineTwoToneIcon from '@material-ui/icons/MailOutlineTwoTone';
 import LockTwoToneIcon from '@material-ui/icons/LockTwoTone';
@@ -30,6 +34,10 @@ const LivePreviewExample = () => {
           <div className="app-content p-0">
             <div className="app-content--inner d-flex align-items-center">
               <div className="flex-grow-1 w-100 d-flex align-items-center">
+                <div
+                  className="bg-composed-wrapper--image"
+                  style={{ backgroundImage: 'url(' + hero3 + ')' }}
+                />
                 <div className="bg-composed-wrapper--content py-5">
                   <Container maxWidth="lg">
                     <Grid container spacing={5}>
@@ -99,6 +107,22 @@ const LivePreviewExample = () => {
                                   size="large"
                                   className="my-2">
                                   Logar
+                                </Button>
+                              </div>
+                              <div>
+                                <Button
+                                  component={RouterLink}
+                                  to="/PagesRecoverPassword"
+                                  className="my-2">
+                                  Esqueci minha senha
+                                </Button>
+                              </div>
+                              <div>
+                                <Button
+                                  component={RouterLink}
+                                  to="/PagesRegister"
+                                  className="my-2">
+                                  Cadastrar uma nova Conta
                                 </Button>
                               </div>
                             </form>
